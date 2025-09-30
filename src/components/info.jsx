@@ -26,10 +26,10 @@ function Info() {
       data-aos="fade-down"
       className={`w-full h-auto ${
         darkMode ? "bg-gray-800" : "bg-purple-600"
-      } text-white py-3 px-5 flex-col overflow-x-hidden justify-between items-center`}
+      } text-white py-3 px-5 flex   overflow-x-hidden justify-between items-center`}
     >
       {/* Contact Info */}
-      <div className="flex gap-6 pl-10 items-center ">
+      <div className=" md:flex  gap-6 pl-10 items-center ">
         <a
           data-aos="fade-right"
           data-aos-delay="200"
@@ -58,7 +58,7 @@ function Info() {
       <div data-aos="zoom-in" data-aos-delay="800">
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className={`p-2 rounded-full border ${
+          className={`p-2  rounded-full border ${
             darkMode ? "border-white" : "border-black"
           } hover:scale-110 transition`}
         >
