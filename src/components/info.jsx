@@ -26,7 +26,7 @@ function Info() {
       data-aos="fade-down"
       className={`w-full h-auto ${
         darkMode ? "bg-gray-800" : "bg-purple-600"
-      } text-white py-3 px-5 flex justify-between md:flex-row md:justify-between md:items-center gap-4`}
+      } text-white py-1 px-5 flex justify-between md:flex-row md:justify-between md:items-center gap-4`}
     >
       <div className="flex flex-col md:flex-row md:gap-10 gap-4 items-start md:items-center">
 
