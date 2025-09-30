@@ -10,14 +10,10 @@ import {
   FaUserAlt,
   FaBars,
 } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
-import { Navigate} from "react-router-dom";
+import { Link ,  } from "react-router-dom";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  // Scroll hone par header sticky + shadow
- const Navigate = useNavigate()
-
+ 
 
 
 
@@ -53,12 +49,15 @@ const Header = () => {
           >
             <FaConciergeBell /> Services
           </Link>
+
           <Link
             to="/categorie"
             className="flex items-center gap-2 hover:text-blue-600"
           >
-            <FaListAlt /> Categories
+            <FaPhone /> Categories
           </Link>
+          
+       
           <Link
             to="/contact"
             className="flex items-center gap-2 hover:text-blue-600"
@@ -67,9 +66,10 @@ const Header = () => {
           </Link>
           
   
-         <button onClick={()=>{navigator('/login')}} className="flex items-center bg-purple-600 py-1 px-4 gap-2 hover:text-blue-600" > 
-          login
-         </button>
+       <a  className="flex items-center bg-purple-600 text-white py-1 px-4 gap-2 hover:text-blue-600" 
+         href="/login" target="_blank" rel="noopener noreferrer">Login</a>
+        
+         
            
           
         
@@ -99,15 +99,15 @@ const Header = () => {
           <Link className="border-b p-2" to="/services" onClick={() => setMenuOpen(false)}>
             <FaConciergeBell className="inline mr-2" /> Services
           </Link>
-          <Link className="border-b p-2" to="/categories" onClick={() => setMenuOpen(false)}>
+          <Link className="border-b p-2" to="/categorie" onClick={() => setMenuOpen(false)}>
             <FaListAlt className="inline mr-2" /> Categories
           </Link>
           <Link className="border-b p-2" to="/contact" onClick={() => setMenuOpen(false)}>
             <FaPhone className="inline mr-2" /> Contact
           </Link>
-          <Link className="border-b p-2" to="/profile" onClick={() => setMenuOpen(false)}>
-            <FaUserAlt className="inline mr-2" /> Profile
-          </Link>
+<a  className="text-center items-center bg-white text-purple-600 py-1 px-4 gap-2 hover:text-blue-600" 
+         href="/login" target="_blank" rel="noopener noreferrer">Login</a>
+        
 
           
         </div>

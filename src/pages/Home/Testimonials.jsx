@@ -85,14 +85,14 @@ const Testimonials = () => {
       <Swiper
         modules={[Pagination, Autoplay]}
         spaceBetween={30}
-        slidesPerView={2}
+        slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         className="w-[90%] md:w-[70%]"
       >
         {csrds.map((card) => (
           <SwiperSlide key={card.id}>
-            <div className="shadow-lg rounded-xl p-6 bg-white md:w-[400px] w-[180px] max-w-md mx-auto">
+            <div className="shadow-lg rounded-xl p-6 bg-white md:w-[400px] w-[250px]  max-w-md mx-auto">
               <img
                 src={card.img}
                 alt={card.Name}

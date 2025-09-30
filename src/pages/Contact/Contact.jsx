@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import Testimonials from "../Home/Testimonials";
 
 const Contact = () => {
   useEffect(() => {
@@ -44,13 +45,13 @@ const Contact = () => {
           </button>
         </form>
       </div>
-
-      {/* Optional Contact Info */}
+<Testimonials/>
+      {/* Optional Contact Info
       <div className="max-w-3xl mx-auto mt-12 text-center text-gray-700" data-aos="fade-up" data-aos-delay="300">
         <p>Email: <span className="font-semibold text-pink-500">info@example.com</span></p>
         <p className="mt-2">Phone: <span className="font-semibold text-purple-500">+91 12345 67890</span></p>
         <p className="mt-2">Address: <span className="font-semibold">Kotputli, Rajasthan</span></p>
-      </div>
+      </div> */}
     </div>
   );
 };

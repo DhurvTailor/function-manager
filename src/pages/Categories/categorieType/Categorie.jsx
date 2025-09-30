@@ -25,14 +25,14 @@ const Categorie = () => {
   const [selected, setSelected] = useState(null); // clicked category
 
   return (
-    <section className="w-full mt-10 py-12 bg-gray-100 text-center">
+    <section className="w-full h-auto  py-12 bg-gray-100 text-center">
       <h2 className="text-2xl font-bold mb-6">Categories</h2>
 
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap  justify-center gap-4">
         {categories.map((cat) => (
           <button
             key={cat.id}
-            className="px-6 py-3 bg-purple-600 text-white rounded-full shadow hover:bg-purple-700 duration-300"
+            className="px-3 py-2 md:px-5 md:py-3  bg-purple-600 text-white rounded-full shadow hover:bg-purple-700 duration-300"
             onClick={() => setSelected(cat.id === selected ? null : cat.id)} // toggle
           >
             {cat.name}

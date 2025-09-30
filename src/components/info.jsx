@@ -8,7 +8,7 @@ function Info() {
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
-    AOS.refresh(); 
+    AOS.refresh();
   }, []);
 
   useEffect(() => {
@@ -26,14 +26,14 @@ function Info() {
       data-aos="fade-down"
       className={`w-full h-auto ${
         darkMode ? "bg-gray-800" : "bg-purple-600"
-      } text-white py-3 px-5 flex   overflow-x-hidden justify-between items-center`}
+      } text-white py-3 px-5 flex justify-between md:flex-row md:justify-between md:items-center gap-4`}
     >
       {/* Contact Info */}
-      <div className=" md:flex  gap-6 pl-10 items-center ">
+      <div className="flex flex-col md:flex-row md:gap-10 gap-4 items-start md:items-center">
         <a
           data-aos="fade-right"
           data-aos-delay="200"
-          className="flex gap-2 items-center "
+          className="flex gap-2 items-center text-sm sm:text-base"
           href="tel:9521634141"
         >
           <FaPhone /> 9521634141
@@ -41,30 +41,36 @@ function Info() {
         <a
           data-aos="fade-up"
           data-aos-delay="400"
-          className="flex gap-2 items-center "
+          className="flex gap-2 items-center text-sm sm:text-base"
           href="mailto:tailor@gmail.com"
-        > <FaEnvelope /> tailor@gmail.com
+        >
+          <FaEnvelope /> tailor@gmail.com
         </a>
         <div
           data-aos="fade-left"
           data-aos-delay="600"
-          className="flex gap-2 items-center "
+          className="flex gap-2 items-center text-sm sm:text-base"
         >
           <FaMapMarkedAlt /> Kotputli
         </div>
       </div>
 
       {/* Dark Mode Button */}
-      <div data-aos="zoom-in" data-aos-delay="800">
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className={`p-2  rounded-full border ${
-            darkMode ? "border-white" : "border-black"
-          } hover:scale-110 transition`}
-        >
-          {darkMode ? <FaSun size={18} /> : <FaMoon size={18} />}
-        </button>
-      </div>
+   <div
+  data-aos="zoom-in"
+  data-aos-delay="800"
+  className="flex justify-center md:justify-end"
+>
+  <button
+    onClick={() => setDarkMode(!darkMode)}
+    className={`p-2 rounded-full border-2 ${
+      darkMode ? "border-white text-white" : "border-black text-black"
+    } hover:scale-110 transition duration-300`}
+  >
+    {darkMode ? <FaSun size={20} /> : <FaMoon size={18} />}
+  </button>
+</div>
+
     </div>
   );
 }
