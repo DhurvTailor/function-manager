@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  FaPhone,
-  FaEnvelope,
-  FaMapMarkedAlt,
-  FaMoon,
-  FaSun,
-} from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarkedAlt, FaMoon, FaSun } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -77,4 +71,3 @@ function Info() {
 }
 
 export default Info;
-

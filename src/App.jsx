@@ -13,7 +13,7 @@ import Login from "./pages/login/Login";
 function App() {
   return (
     <><BrowserRouter >
-      <Info />
+      <Info/>
       <Header />
 
       {/* Routes */}
