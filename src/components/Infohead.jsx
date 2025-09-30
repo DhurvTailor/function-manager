@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaMapMarkedAlt, FaMoon, FaSun } from "react-icons/
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function Info() {
+function Infohead() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -70,4 +70,4 @@ function Info() {
   );
 }
 
-export default Info;
+export default Infohead;
